@@ -29,6 +29,8 @@ $(document).ready(function() {
     if(answer[4] == "D"){
       score++;
     }
-
+$("#form1").hide(function(event){
+alert(score);
+});
 });
 });
