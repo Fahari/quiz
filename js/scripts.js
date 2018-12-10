@@ -20,7 +20,15 @@ $(document).ready(function() {
     if(answer[1] == "D"){
       score++;
     }
-
+    if(answer[2]== "C"){
+      score++;
+    }
+    if(answer[3] == "A"){
+      score++;
+    }
+    if(answer[4] == "D"){
+      score++;
+    }
 
 });
 });
