@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <title>Calculator</title>
+     <title>JS Quiz</title>
      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
      <link href="css/styles.css" rel="stylesheet" type="text/css">
      <script src="js/jquery-3.3.1.js"></script>
@@ -12,7 +12,7 @@
      <p id="intro">Feeling good about your JavaScript knowledge? Try this test. You won't feel good anymore.</p>
 
         <div class="container">
-          <div class="forms">
+          <div id="form1">
             <form name="quiz">
 
               Name:  <input type="text" name="username" id="user"><br><br>
@@ -41,46 +41,10 @@
               <input type="radio" name="question3" value="C">changeCase(case)<br>
               <input type="radio" name="question3" value="D">None of the above<br><br>
 
-              <p>5. Which of the following function of String object returns the calling string value converted to lower case?</p>
-              <input type="radio" name="question4" value="A">toLocaleLowerCase()<br>
-              <input type="radio" name="question4" value="B">toLowerCase()<br>
-              <input type="radio" name="question4" value="C">toString()<br>
-              <input type="radio" name="question4" value="D">substring()<br><br>
+              
 
-              <p>6. Which of the following is true about cookie handling in JavaScript?</p>
-              <input type="radio" name="question5" value="A">JavaScript can manipulate cookies using the cookie property of the Document object.<br>
-              <input type="radio" name="question5" value="B">JavaScript can read, create, modify, and delete the cookie or cookies that apply to the current web page.<br>
-              <input type="radio" name="question5" value="C">Both of the above.<br>
-              <input type="radio" name="question5" value="D">None of the above.<br><br>
+              <button onClick="returnScore()">Test Yourself</button>
 
-              <p>7. Which of the following function of Boolean object returns a string containing the source of the Boolean object?</p>
-              <input type="radio" name="question6" value="A">toSource()<br>
-              <input type="radio" name="question6" value="B">valueOf()<br>
-              <input type="radio" name="question6" value="C">toString()<br>
-              <input type="radio" name="question6" value="D">None of the above.<br><br>
-
-              <p>8. Which of the following function of String object returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order? </p>
-              <input type="radio" name="question7" value="A">localeCompare()<br>
-              <input type="radio" name="question7" value="B">search()<br>
-              <input type="radio" name="question7" value="C">substr()<br>
-              <input type="radio" name="question7" value="D">concat<br><br>
-
-              <p>9. Which of the following function of String object causes a string to be displayed as a superscript, as if it were in a <sup> tag?</p>
-              <input type="radio" name="question8" value="A">sup()<br>
-              <input type="radio" name="question8" value="B">small()<br>
-              <input type="radio" name="question8" value="C">strike()<br>
-              <input type="radio" name="question8" value="D">sub()<br><br>
-
-              <p>10. Which of the following function of Array object creates a new array with all of the elements of this array for which the provided filtering function returns true?</p>
-              <input type="radio" name="question9" value="A">concat()<br>
-              <input type="radio" name="question9" value="B">every()<br>
-              <input type="radio" name="question9" value="C">filter()<br>
-              <input type="radio" name="question9" value="D">some()<br><br>
-
-
-
-
-              <button onclick="returnScore()">Test Yourself</button>
 
             </form>
 
