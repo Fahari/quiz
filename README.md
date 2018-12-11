@@ -31,6 +31,12 @@ At the making of this web page dated 10/12/2018, NO bugs existed in the project.
 5. jquery
 
 # Behavior Driven Development Process
+| Behavior                         |  Input Example |  Output  Example                 |
+|----------                        |:-------------: |------:  |
+| User inputs their name        | "Kevin"         | "Kevin",your score is ?/5
+| User inputs correct answer     | A,B,C or D      | "Kevin",your score is 1/5
+| User inputs wrong answer       | A,B,C or D      | "Kevin",your score is 0/5
+| User inputs all correct answers | A,B,C or D     | "Kevin",your score is 5/5
 
 
 ## Live site
