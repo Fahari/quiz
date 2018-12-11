@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-     <title>JS Quiz</title>
-     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-  </head>
-  <body>
-    <div class="jumbotron">
-     <h1>JavaScript Quiz</h1>
-     <p id="intro">Feeling good about your JavaScript knowledge? Try this test. You won't feel good anymore.</p>
+<head>
+  <title>JS Quiz</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1>JavaScript Quiz</h1>
+    <p id="intro">Feeling good about your JavaScript knowledge? Try this test. You won't feel good anymore.</p>
+  </div>
+  <div class="container">
+    <div id="form1">
+      <form class="quiz">
+
+        Name: <input type="text" name="username" id="user"><br><br>
+
+        <p>1. Which of the following is true about variable naming conventions in JavaScript?</p>
+        <input type="radio" name="question0" value="A">You should not use any of the JavaScript reserved keyword as variable name.<br>
+        <input type="radio" name="question0" value="B">JavaScript variable names should not start with a numeral (0-9).<br>
+        <input type="radio" name="question0" value="C">Both of the above.<br>
+        <input type="radio" name="question0" value="D">None of the above.<br><br>
+
+        <p>2. Which of the following function of Array object returns a string representing the array and its elements?</p>
+        <input type="radio" name="question1" value="A">toSource()<br>
+        <input type="radio" name="question1" value="B">sort()<br>
+        <input type="radio" name="question1" value="C">splice()<br>
+        <input type="radio" name="question1" value="D">toString()<br><br>
+
+        <p>3. Which built-in method calls a function for each element in the array?</p>
+        <input type="radio" name="question2" value="A">while()<br>
+        <input type="radio" name="question2" value="B">loop()<br>
+        <input type="radio" name="question2" value="C">forEach()<br>
+        <input type="radio" name="question2" value="D">None of the above<br><br>
+
+        <p>4. Which built-in method returns the calling string value converted to upper case?</p>
+        <input type="radio" name="question3" value="A">toUpperCase()<br>
+        <input type="radio" name="question3" value="B">toUpper()<br>
+        <input type="radio" name="question3" value="C">changeCase(case)<br>
+        <input type="radio" name="question3" value="D">None of the above<br><br>
+
+        <p>5. Which of the following function of String object returns the calling string value converted to lower case?</p>
+        <input type="radio" name="question4" value="A">toLocaleLowerCase()<br>
+        <input type="radio" name="question4" value="B">toLowerCase()<br>
+        <input type="radio" name="question4" value="C">toString()<br>
+        <input type="radio" name="question4" value="D">substring()<br><br>
+
+
+        <button type="button" class="btn btn-primary" id="test">Test Yourself</button>
+
+
+      </form>
     </div>
-        <div class="container">
-          <div id="form1">
-            <form class="quiz">
+  </div>
+  <div>
+    <p id="display"></p>
+  </div>
 
-              Name:  <input type="text" name="username" id="user"><br><br>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
 
-              <p>1. Which of the following is true about variable naming conventions in JavaScript?</p>
-              <input type="radio" name="question0" value="A">You should not use any of the JavaScript reserved keyword as variable name.<br>
-              <input type="radio" name="question0" value="B">JavaScript variable names should not start with a numeral (0-9).<br>
-              <input type="radio" name="question0" value="C">Both of the above.<br>
-              <input type="radio" name="question0" value="D">None of the above.<br><br>
-
-              <p>2. Which of the following function of Array object returns a string representing the array and its elements?</p>
-              <input type="radio" name="question1" value="A">toSource()<br>
-              <input type="radio" name="question1" value="B">sort()<br>
-              <input type="radio" name="question1" value="C">splice()<br>
-              <input type="radio" name="question1" value="D">toString()<br><br>
-
-              <p>3. Which built-in method calls a function for each element in the array?</p>
-              <input type="radio" name="question2" value="A">while()<br>
-              <input type="radio" name="question2" value="B">loop()<br>
-              <input type="radio" name="question2" value="C">forEach()<br>
-              <input type="radio" name="question2" value="D">None of the above<br><br>
-
-              <p>4. Which built-in method returns the calling string value converted to upper case?</p>
-              <input type="radio" name="question3" value="A">toUpperCase()<br>
-              <input type="radio" name="question3" value="B">toUpper()<br>
-              <input type="radio" name="question3" value="C">changeCase(case)<br>
-              <input type="radio" name="question3" value="D">None of the above<br><br>
-
-              <p>5. Which of the following function of String object returns the calling string value converted to lower case?</p>
-              <input type="radio" name="question4" value="A">toLocaleLowerCase()<br>
-              <input type="radio" name="question4" value="B">toLowerCase()<br>
-              <input type="radio" name="question4" value="C">toString()<br>
-              <input type="radio" name="question4" value="D">substring()<br><br>
-
-
-              <button type="button" class="btn btn-primary" id="test">Test Yourself</button>
-
-
-            </form>
-          </div>
-        </div>
-        <div>
-        <p id="display"></p>
-        </div>
-
-        <script src="js/jquery-3.3.1.js"></script>
-        <script src="js/scripts.js"></script>
-  </body>
 </html>

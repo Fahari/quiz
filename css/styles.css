@@ -1,20 +1,22 @@
 h1 {
   text-align: center;
 }
+
 #intro {
   text-align: center;
 }
+
 body {
-    text-align: none;
-
+  text-align: none font-family: 'PT Sans', sans-serif;
 }
-#form1{
 
-width: 40%;
-border-radius: 10px;
-margin: auto;
-padding: 1%
+#form1 {
+  width: 40%;
+  border-radius: 10px;
+  margin: auto;
+  padding: 1%
 }
-#display{
+
+#display {
   text-align: center;
 }

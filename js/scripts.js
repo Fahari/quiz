@@ -1,38 +1,36 @@
-
-
 $(document).ready(function() {
   $("#test").click(function() {
 
     var username = $("#user").val()
-    var answer=[];
-    answer.push ($("input:radio[name=question0]:checked").val());
-    answer.push ($("input:radio[name=question1]:checked").val());
-    answer.push( $("input:radio[name=question2]:checked").val());
+    var answer = [];
+    answer.push($("input:radio[name=question0]:checked").val());
+    answer.push($("input:radio[name=question1]:checked").val());
+    answer.push($("input:radio[name=question2]:checked").val());
     answer.push($("input:radio[name=question3]:checked").val());
     answer.push($("input:radio[name=question4]:checked").val());
 
 
 
-   var score = 0;
+    var score = 0;
 
 
-    if(answer[0] == "C"){
+    if (answer[0] == "C") {
       score++;
     }
-    if(answer[1] == "D"){
+    if (answer[1] == "D") {
       score++;
     }
-    if(answer[2]== "C"){
+    if (answer[2] == "C") {
       score++;
     }
-    if(answer[3] == "A"){
+    if (answer[3] == "A") {
       score++;
     }
-    if(answer[4] == "D"){
+    if (answer[4] == "D") {
       score++;
     }
-$("#form1").hide(function(event){
-$("#display").html(username + ", you scored "+ score + "/5");
-});
-});
+    $("#form1").hide(function(event) {
+      $("#display").html(username + ", you scored " + score + "/5");
+    });
+  });
 });
