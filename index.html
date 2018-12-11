@@ -4,18 +4,18 @@
      <title>JS Quiz</title>
      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
      <link href="css/styles.css" rel="stylesheet" type="text/css">
-     <script src="js/jquery-3.3.1.js"></script>
-     <script src="js/scripts.js"></script>
+
   </head>
   <body>
+    <div class="jumbotron">
      <h1>JavaScript Quiz</h1>
      <p id="intro">Feeling good about your JavaScript knowledge? Try this test. You won't feel good anymore.</p>
-
+    </div>
         <div class="container">
           <div id="form1">
             <form class="quiz">
 
-              Name:  <input type="text" name="username" id="user"><br><br> 
+              Name:  <input type="text" name="username" id="user"><br><br>
 
               <p>1. Which of the following is true about variable naming conventions in JavaScript?</p>
               <input type="radio" name="question0" value="A">You should not use any of the JavaScript reserved keyword as variable name.<br>
@@ -58,5 +58,7 @@
         <p id="display"></p>
         </div>
 
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/scripts.js"></script>
   </body>
 </html>
