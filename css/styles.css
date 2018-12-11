@@ -5,7 +5,15 @@ h1 {
   text-align: center;
 }
 body {
-  text-align: none;
+    text-align: none;
+
+}
+#form1{
+
+width: 40%;
+border-radius: 10px;
+margin: auto;
+padding: 1%
 }
 #display{
   text-align: center;
