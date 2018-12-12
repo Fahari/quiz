@@ -5,13 +5,15 @@ h1 {
 #intro {
   text-align: center;
 }
-input{
+input {
   margin: 8px;
   border-radius: 6px;
+  border: none;
+  background-color: #B2BABB;
 }
 
 input:focus {
-  border: 3px solid #555;
+  background-color: #B2BABB;
 }
 
 body {
