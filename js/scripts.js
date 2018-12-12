@@ -2,6 +2,7 @@
 $(document).ready(function() {
   $("#test").click(function() {
 
+    var score = 0;
     var userName = $("#user").val()
     var answer = [];
     answer.push($("input:radio[name=question0]:checked").val());
@@ -13,24 +14,24 @@ $(document).ready(function() {
     $("#form1").hide(function(event) {
       $("#display").html(userName + ", you scored " + score + "/5");
     });
+//Business logic
+    if (answer[0] == "C") {
+      score++;
+    }
+    if (answer[1] == "D") {
+      score++;
+    }
+    if (answer[2] == "C") {
+      score++;
+    }
+    if (answer[3] == "A") {
+      score++;
+    }
+    if (answer[4] == "D") {
+      score++;
+    }
+
   });
 });
 
 //Business Logic
-var score = 0;
-
-if (answer[0] == "C") {
-  score++;
-}
-if (answer[1] == "D") {
-  score++;
-}
-if (answer[2] == "C") {
-  score++;
-}
-if (answer[3] == "A") {
-  score++;
-}
-if (answer[4] == "D") {
-  score++;
-}
