@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("#test").click(function() {
 
-    var username = $("#user").val()
+    var userName = $("#user").val()
     var answer = [];
     answer.push($("input:radio[name=question0]:checked").val());
     answer.push($("input:radio[name=question1]:checked").val());
@@ -30,7 +30,7 @@ $(document).ready(function() {
       score++;
     }
     $("#form1").hide(function(event) {
-      $("#display").html(username + ", you scored " + score + "/5");
+      $("#display").html(userName + ", you scored " + score + "/5");
     });
   });
 });
