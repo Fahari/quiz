@@ -1,3 +1,4 @@
+//User Interface logic
 $(document).ready(function() {
   $("#test").click(function() {
 
@@ -15,6 +16,7 @@ $(document).ready(function() {
   });
 });
 
+//Business Logic
 var score = 0;
 
 if (answer[0] == "C") {
