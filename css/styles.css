@@ -5,16 +5,24 @@ h1 {
 #intro {
   text-align: center;
 }
+input{
+  margin: 8px;
+  border-radius: 6px;
+}
+
+input:focus {
+  border: 3px solid #555;
+}
 
 body {
   text-align: none;
   font-family: 'PT Sans', sans-serif;
-  background: #63B1EE;
+  background: #2C7DBD;
 }
 
 #form1 {
   width: 40%;
-  background: #B7B1DC;
+  background: #EAEDED;
   border-radius: 10px;
   margin: auto;
   padding: 1%
